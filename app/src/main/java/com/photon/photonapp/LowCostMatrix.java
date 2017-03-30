@@ -4,7 +4,7 @@ package com.photon.photonapp;
  * Created by Manoj on 3/24/2017.
  */
 
-public class LowCostMatrix {
+public class LowCostMatrix{
 
     private int rows;
     private int columns;
@@ -48,16 +48,4 @@ public class LowCostMatrix {
         return matrix;
     }
 
-    public boolean areValuesOverLimit(){
-        for( int i = 0 ; i < matrix.length ; i++ ) {
-            for ( int j = 0 ; j < matrix[i].length ; j++ ) {
-
-                if(matrix[i][j]>50){
-                    System.out.println( "The array has elements with values >50, not proceeding" );
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
 }
